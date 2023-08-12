@@ -5,4 +5,4 @@ RUN chmod +x /entrypoint.sh
 
 WORKDIR /github/workspace
 
-ENTRYPOINT ["/entrypoint.sh", "--platform linux/amd64"]
+ENTRYPOINT ["/entrypoint.sh"]
