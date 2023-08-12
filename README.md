@@ -4,7 +4,7 @@
 
 ![notification](./images/telegram-notification.png)
 
-[![Actions Status](https://github.com/appleboy/telegram-action/workflows/telegram%20message/badge.svg)](https://github.com/appleboy/telegram-action/actions)
+[![Actions Status](https://github.com/theone55/telegram-action-arm/workflows/telegram%20message/badge.svg)](https://github.com/theone55/telegram-action-arm/actions)
 
 ## Usage
 
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: send telegram message on push
-        uses: appleboy/telegram-action@master
+        uses: theone55/telegram-action-arm@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
@@ -39,7 +39,7 @@ Remove `args` to send the default message.
 
 ```yml
 - name: send default message
-  uses: appleboy/telegram-action@master
+  uses: theone55/telegram-action-arm@master
   with:
     to: ${{ secrets.TELEGRAM_TO }}
     token: ${{ secrets.TELEGRAM_TOKEN }}
@@ -72,7 +72,7 @@ send photo message:
 ```yml
 - uses: actions/checkout@master
 - name: send photo message
-  uses: appleboy/telegram-action@master
+  uses: theone55/telegram-action-arm@master
   with:
     to: ${{ secrets.TELEGRAM_TO }}
     token: ${{ secrets.TELEGRAM_TOKEN }}
@@ -85,7 +85,7 @@ send location message:
 
 ```yml
 - name: send location message
-  uses: appleboy/telegram-action@master
+  uses: theone55/telegram-action-arm@master
   with:
     to: ${{ secrets.TELEGRAM_TO }}
     token: ${{ secrets.TELEGRAM_TOKEN }}
@@ -97,7 +97,7 @@ send message using custom proxy (support `http`, `https`, and `socks5`) like `so
 
 ```yml
 - name: send message using socks5 proxy URL
-  uses: appleboy/telegram-action@master
+  uses: theone55/telegram-action-arm@master
   with:
     to: ${{ secrets.TELEGRAM_TO }}
     token: ${{ secrets.TELEGRAM_TOKEN }}
