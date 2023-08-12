@@ -8,6 +8,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Set execute permission
+      run: chmod +x entrypoint.sh
+
+    - name: Build Docker image
+      run: docker build .
+
     - name: send custom message with args
       uses: ./
       with:
